@@ -96,9 +96,10 @@ stage.addChild(stopText);
 // add events
 startText.interactive = true;
 startText.on('mousedown', onDown);
+startText.on('touch', onDown);
 stopText.interactive = true;
 stopText.on('mousedown', onDown);
-
+stopText.on('touch', onDown);
 
 // start animating
 requestAnimationFrame(animate);
